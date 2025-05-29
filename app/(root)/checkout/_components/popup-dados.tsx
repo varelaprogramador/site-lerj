@@ -89,7 +89,7 @@ export const InfoCheckout = ({
   };
   const generatePix = async () => {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/payaments/open-pix`,
+      `${process.env.NEXT_PUBLIC_API_URL}/payments/site`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
