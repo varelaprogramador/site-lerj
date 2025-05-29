@@ -1,6 +1,5 @@
-import { ClerkProvider } from "@clerk/nextjs";
 import { Poppins } from "next/font/google";
-import { ptBR } from "@clerk/localizations";
+
 import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 import { Metadata } from "next";
@@ -23,13 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider localization={ptBR}>
-      <html lang="pt" className={poppins.variable}>
-        <body className="bg-gray-100">
-          <NextTopLoader color="blue" />
-          {children}
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="pt" className={poppins.variable}>
+      <body className="bg-gray-100">
+        <NextTopLoader color="blue" />
+        {children}
+      </body>
+    </html>
   );
 }

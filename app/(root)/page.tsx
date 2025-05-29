@@ -7,7 +7,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { useEffect, useRef, useState } from "react";
 import { createClientSupabaseClient } from "@/lib/supabase/client";
 import { ProdutosProps } from "@/utils/produto";
-import { MediaBannerProps, MediaProps } from "../utils/media";
+import { MediaBannerProps, MediaProps } from "@/utils/media";
 import Link from "next/link";
 import EmblaCarousel from "@/components/carousel-emblar";
 import { useIsMobile } from "@/hooks/use-mobile";
