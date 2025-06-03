@@ -11,9 +11,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "NEXTRECARGAS",
-  applicationName: "NEXT RECARGAS",
-  metadataBase: new URL("https://bot-next-v1.vercel.app/"),
+  title: "LERJ RECARGAS",
+  applicationName: "LERJ RECARGAS",
+  metadataBase: new URL("https://lerjrecargas.com/"),
+  icons: {
+    icon: "/ico.jpg",
+  },
 };
 
 export default function RootLayout({
