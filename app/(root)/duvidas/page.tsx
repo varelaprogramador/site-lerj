@@ -24,13 +24,13 @@ export default function Duvidas() {
         </p>
         <div className="flex max-md:flex-col gap-4">
           {" "}
-          <Link href={process.env.NEXT_PUBLIC_WHATSAPP_SUPPORT || ""}>
+          <Link href={process.env.NEXT_PUBLIC_WHATSAPP_SUPPORT || "https://wa.me/553191884967?text=Preciso%20de%20ajuda!"}>
             <Button variant="sucess" className="flex-1">
               <MessagesSquare className="mr-2 h-4 w-full" />
               Suporte via WhatsApp
             </Button>
           </Link>{" "}
-          <Link href={process.env.NEXT_PUBLIC_TELEGRAM_SUPPORT || ""}>
+          <Link href={process.env.NEXT_PUBLIC_TELEGRAM_SUPPORT || "https://t.me/lerjsuporte"}>
             <Button className="flex-1 bg-blue-500 hover:bg-blue-400">
               <MessagesSquare className="mr-2 h-4 w-full" />
               Suporte via Telegram

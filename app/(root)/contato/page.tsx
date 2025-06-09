@@ -11,7 +11,7 @@ export default function Contact() {
       <h2 className="text-2xl font-semibold">Contato</h2>
       <Separator></Separator>
       <div className="w-full   p-4  rounded-md  grid grid-cols-2 max-md:grid-cols-1 gap-10">
-        <Link href={process.env.NEXT_PUBLIC_WHATSAPP_SUPPORT || ""}>
+        <Link href={process.env.NEXT_PUBLIC_WHATSAPP_SUPPORT || "https://wa.me/553191884967?text=Preciso%20de%20ajuda!"}>
           <div className=" border-green-500 transition-all hover:border-solid hover:scale-110 border-dotted border-2 min-h-[300px] rounded-md text-green-500 flex flex-col items-center justify-center">
             <Image
               src="/WhatsApp.webp"
@@ -22,7 +22,7 @@ export default function Contact() {
             <h2 className="font-semibold">Whatsapp</h2>
           </div>
         </Link>
-        <Link href={process.env.NEXT_PUBLIC_TELEGRAM_SUPPORT || ""}>
+        <Link href={process.env.NEXT_PUBLIC_TELEGRAM_SUPPORT || "https://t.me/lerjsuporte"}>
           <div className=" border-blue-500 transition-all hover:border-solid hover:scale-110 border-dotted border-2 min-h-[300px] rounded-md text-blue-500 flex flex-col items-center justify-center">
             <Image
               src="/Telegram.png"
